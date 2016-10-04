@@ -1,8 +1,11 @@
-var total = 0;
-for(var i = 1;i < 1000; i++)
+var euler1 = function(upperLimit)
 {
-	if(i%3 ===0 || i%5 === 0)
+	var total = 0;
+	for(var i = 1;i < upperLimit; i++)
 	{
-		total += i;
+		if(i%3 ===0 || i%5 === 0)
+		{
+			total += i;
+		}
 	}
 }
