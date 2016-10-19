@@ -1,1 +1,5 @@
 /* css file for euler */
+#answerBlock{
+    text-decoration-color: green;
+    font-weight: bold;
+}

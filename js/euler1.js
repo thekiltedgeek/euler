@@ -1,4 +1,13 @@
-var euler1 = function(upperLimit)
+$(document).ready(function(){
+    var answerBlock = $('#answerBlock');
+    $('input[name=submitButton]').click(function(){
+       var limit = parseInt($('input[name=limitBox]').val());
+        var result = euler1(limit);
+        answerBlock.text("Answer: " + result);
+    });
+});
+
+function euler1(upperLimit)
 {
 	var total = 0;
 	for(var i = 1;i < upperLimit; i++)
@@ -8,4 +17,6 @@ var euler1 = function(upperLimit)
 			total += i;
 		}
 	}
+    
+    return total;
 }
