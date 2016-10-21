@@ -1,7 +1,9 @@
 $(document).ready(function(){
     var answerBlock = $('#answerBlock');
-    var result = fib();
-    answerBlock.text("Answer: " + result);
+    $('input[name=submitButton]').click(function(){
+        var result = fib();
+        answerBlock.text("Answer: " + result);    
+    });
 });
 
 function fib(){
